@@ -1,4 +1,14 @@
 {
 	"version": 2,
-	"rewrites": [{ "source": "/(.*)", "destination": "/routes" }]
+	"functions": {
+		"api/hello.js": {
+			"runtime": "nodejs14.x"
+		}
+	},
+	"routes": [
+		{
+			"src": "/api/(.*)",
+			"dest": "/api/hello.js"
+		}
+	]
 }
