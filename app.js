@@ -6,8 +6,8 @@ var logger = require('morgan')
 var cors = require('cors')
 var mongoose = require('mongoose')
 
-var todorouter = require('./routes/todos')
-var usersRouter = require('./routes/users')
+var todorouter = require('./src/routes/todos')
+var usersRouter = require('./src/routes/users')
 
 const { URI, PORT } = require('./config')
 

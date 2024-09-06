@@ -2,7 +2,7 @@ var express = require('express')
 var router = express.Router()
 const bcrypt = require('bcrypt')
 const { User } = require('../models/Users')
-const { SECRET_ACCESS_TOKEN } = require('../config')
+const { SECRET_ACCESS_TOKEN } = require('../../config')
 const jwt = require('jsonwebtoken')
 const saltRounds = 10
 
