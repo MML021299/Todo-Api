@@ -1,11 +1,9 @@
 {
   "name": "todo-api",
-  "version": "0.0.0",
-  "private": true,
-  "main": "app.js",
+  "version": "1.0.0",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "nodemon ./api/hello.js"
+    "start": "node ./api/hello.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
