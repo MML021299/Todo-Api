@@ -42,6 +42,11 @@ app.listen(PORT, () =>
 app.use('/todos', todorouter)
 app.use('/users', usersRouter)
 
+app.get('/', function(req, res, next) {
+  res.send('Hello World!');
+  res.render('index', { title: 'Express' });
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404))
