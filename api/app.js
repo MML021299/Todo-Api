@@ -6,10 +6,10 @@ var logger = require('morgan')
 var cors = require('cors')
 var mongoose = require('mongoose')
 
-var todorouter = require('./src/routes/todos')
-var usersRouter = require('./src/routes/users')
+var todorouter = require('../src/routes/todos')
+var usersRouter = require('../src/routes/users')
 
-const { URI, PORT } = require('./config')
+const { URI, PORT } = require('../config')
 
 var app = express()
 app.use(cors())
