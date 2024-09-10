@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "node ./api/index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
