@@ -19,28 +19,28 @@ app.use(cors())
 // app.set('views', path.join(__dirname, 'views'))
 // app.set('view engine', 'jade')
 
-app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cookieParser())
-app.use(express.static(path.join(__dirname, 'public')))
+// app.use(logger('dev'))
+// app.use(express.json())
+// app.use(express.urlencoded({ extended: false }))
+// app.use(cookieParser())
+// app.use(express.static(path.join(__dirname, 'public')))
 
-mongoose.promise = global.Promise
-mongoose.set("strictQuery", false)
-mongoose
-  .connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(console.log("Connected to database"))
-  .catch((err) => console.log(err))
+// mongoose.promise = global.Promise
+// mongoose.set("strictQuery", false)
+// mongoose
+//   .connect(URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(console.log("Connected to database"))
+//   .catch((err) => console.log(err))
 
-app.listen(PORT, () =>
-    console.log(`Server running on http://localhost:${PORT}`)
-)
+// app.listen(PORT, () =>
+//     console.log(`Server running on http://localhost:${PORT}`)
+// )
 
-app.use('/todos', todorouter)
-app.use('/users', usersRouter)
+// app.use('/todos', todorouter)
+// app.use('/users', usersRouter)
 
 app.get('/', function(req, res, next) {
   res.send('Hello World!');
